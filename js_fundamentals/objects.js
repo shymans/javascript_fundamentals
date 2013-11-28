@@ -13,6 +13,19 @@
 // cumin
 // cocoa
 
+var recipe = {
+  title: "Chicken Swiss",
+  servings: 4,
+  ingredients: ["chicken", "lemon", "swiss cheese", "breading"]
+}
+console.log(recipe.title);
+console.log("Serves: " + recipe.servings);
+console.log("Ingredients:");
+console.log(recipe.ingredients[0]);
+console.log(recipe.ingredients[1]);
+console.log(recipe.ingredients[2]);
+console.log(recipe.ingredients[3]);
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
@@ -21,6 +34,34 @@
 // Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
+var onTheShelf = [
+  {
+    title: "The Dark Tower",
+    author: "Steven King",
+    alreadyRead: true
+  },
+
+  {
+    title: "The Golden Compass",
+    author: "Jim Pearlson",
+    alreadyRead: true
+  },
+
+  {
+    title: "The Wish List",
+    author: "Eion Colpher",
+    alreadyRead: false
+  }
+]
+
+for ( var i = 0; i < onTheShelf.length; i++ ) {
+  if ( onTheShelf[i].alreadyRead === false ) {
+    console.log("You still need to read " + onTheShelf[i].title + " by " + onTheShelf[i].author);
+  } else {
+    console.log("You have already read " + onTheShelf[i].title + " by " + onTheShelf[i].author);
+  }
+}
+
 // EXERCISE: The Movie Database
 
 // It's like IMDB, but much much smaller!
@@ -28,5 +69,14 @@
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 
+var movieDatabase = {
+  title: "The Empire Strikes Back",
+  duration: 138,
+  stars: ["Blonde hair", "McFuzz", "Tobi", "Jackman"]
+}
 
+function printMovie(object) {
+  console.log(object.title + " lasts for " + object.duration + " minutes. " + "Stars: " + object.stars );
+}
 
+printMovie(movieDatabase);

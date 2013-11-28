@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #### JavaScript Fundamentals
 
 We've put together a condensed set of tutorials to take you through the fundamentals of JavaScript. They have been curated in a way that gives you enough information to figure out the following exercises for that section.
@@ -17,3 +18,7 @@ Please clone the repo, remove the remote and commit your solutions to your own r
 * [JS DOM Exercises](https://github.com/bitmakerlabs/javascript_fundamentals/blob/master/js_fundamentals/dom.js)
 * [JS Code Organization](https://github.com/bitmakerlabs/javascript_fundamentals/wiki/7-Code-Organization)
 * [JS Optional Exercises](https://github.com/bitmakerlabs/javascript_fundamentals/blob/master/js_fundamentals/optional.js)
+=======
+javascript_fundamentals
+=======================
+>>>>>>> fcb3e4ac6af6ea873eb1c24e738c1fa896f1314a
